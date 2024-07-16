@@ -51,7 +51,7 @@ public class meiro extends MyFrame {
 					if (meiro[i][j] == 1) {
 						setColor(0, 0, 0);
 						drawString("■", 40 + (i * 19), 70 + (j * 19), 20);
-						sleep(1);
+						sleep(0.1);
 					}
 					Collections.shuffle(vec);
 					if (j == 2) {
@@ -60,19 +60,19 @@ public class meiro extends MyFrame {
 							meiro[i + 1][j] = 1;
 							setColor(0, 0, 0);
 							drawString("■", 40 + ((i + 1) * 19), 70 + (j * 19), 20);
-							sleep(1);
+							sleep(0.1);
 							break;
 						case "up":
 							meiro[i][j - 1] = 1;
 							setColor(0, 0, 0);
 							drawString("■", 40 + (i * 19), 70 + ((j - 1) * 19), 20);
-							sleep(1);
+							sleep(0.1);
 							break;
 						case "down":
 							meiro[i][j + 1] = 1;
 							setColor(0, 0, 0);
 							drawString("■", 40 + (i * 19), 70 + ((j + 1) * 19), 20);
-							sleep(1);
+							sleep(0.1);
 							break;
 						case "left":
 							if (meiro[i - 1][j] == 1) {
@@ -83,21 +83,21 @@ public class meiro extends MyFrame {
 									meiro[i + 1][j] = 1;
 									setColor(0, 0, 0);
 									drawString("■", 40 + ((i + 1) * 19), 70 + (j * 19), 20);
-									sleep(1);
+									sleep(0.1);
 									vec.add("left");
 									break;
 								case "up":
 									meiro[i][j - 1] = 1;
 									setColor(0, 0, 0);
 									drawString("■", 40 + (i * 19), 70 + ((j - 1) * 19), 20);
-									sleep(1);
+									sleep(0.1);
 									vec.add("left");
 									break;
 								case "down":
 									meiro[i][j + 1] = 1;
 									setColor(0, 0, 0);
 									drawString("■", 40 + (i * 19), 70 + ((j + 1) * 19), 20);
-									sleep(1);
+									sleep(0.1);
 									vec.add("left");
 									break;
 								}
@@ -105,7 +105,7 @@ public class meiro extends MyFrame {
 								meiro[i - 1][j] = 1;
 								setColor(0, 0, 0);
 								drawString("■", 40 + ((i - 1) * 19), 70 + (j * 19), 20);
-								sleep(1);
+								sleep(0.1);
 							}
 							break;
 						}
@@ -116,13 +116,13 @@ public class meiro extends MyFrame {
 							meiro[i + 1][j] = 1;
 							setColor(0, 0, 0);
 							drawString("■", 40 + ((i + 1) * 19), 70 + (j * 19), 20);
-							sleep(1);
+							sleep(0.1);
 							break;
 						case "down":
 							meiro[i][j + 1] = 1;
 							setColor(0, 0, 0);
 							drawString("■", 40 + (i * 19), 70 + ((j + 1) * 19), 20);
-							sleep(1);
+							sleep(0.1);
 							break;
 						case "left":
 							if (meiro[i - 1][j] == 1) {
@@ -133,14 +133,14 @@ public class meiro extends MyFrame {
 									meiro[i + 1][j] = 1;
 									setColor(0, 0, 0);
 									drawString("■", 40 + ((i + 1) * 19), 70 + (j * 19), 20);
-									sleep(1);
+									sleep(0.1);
 									vec2.add("left");
 									break;
 								case "down":
 									meiro[i][j + 1] = 1;
 									setColor(0, 0, 0);
 									drawString("■", 40 + (i * 19), 70 + ((j + 1) * 19), 20);
-									sleep(1);
+									sleep(0.1);
 									vec2.add("left");
 									break;
 								}
@@ -148,7 +148,7 @@ public class meiro extends MyFrame {
 								meiro[i - 1][j] = 1;
 								setColor(0, 0, 0);
 								drawString("■", 40 + ((i - 1) * 19), 70 + (j * 19), 20);
-								sleep(1);
+								sleep(0.1);
 							}
 							break;
 						}
