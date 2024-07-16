@@ -1,9 +1,8 @@
-
 public class start {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
-
+		MyFrame frame1=new meiro();
+		frame1.setSize(2000,2000);
 	}
 
 }
