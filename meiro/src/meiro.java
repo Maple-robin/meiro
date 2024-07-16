@@ -9,6 +9,7 @@ public class meiro extends MyFrame {
 		addKeyListener(reroll);
 		Makemeiro();
 	}
+	
 	public void Makemeiro(){
 		int[][] meiro = new int[21][21];
 		Vector<String> vec = new Vector<>();
